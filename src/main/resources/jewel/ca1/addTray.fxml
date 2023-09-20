@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jewel.ca1.addTrayController">
+   <children>
+      <Text layoutX="75.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a tray !" textAlignment="CENTER" wrappingWidth="650.13671875">
+         <font>
+            <Font name="Segoe UI Black Italic" size="42.0" />
+         </font>
+      </Text>
+      <Text layoutX="150.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case" textAlignment="CENTER" underline="true" wrappingWidth="150.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <ColorPicker fx:id="tcp" layoutX="150.0" layoutY="167.0" prefHeight="25.0" prefWidth="150.0" />
+      <Text layoutX="150.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colour" textAlignment="CENTER" underline="true" wrappingWidth="150.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fxTrayID" layoutX="468.0" layoutY="83.0" promptText="e.g, A12" />
+      <TextField fx:id="fxTrayW" layoutX="429.0" layoutY="167.0" prefHeight="25.0" prefWidth="93.0" promptText="X cm " />
+      <Text layoutX="529.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="26.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fxTrayH" layoutX="564.0" layoutY="167.0" prefHeight="25.0" prefWidth="93.0" promptText="X cm" />
+      <Text layoutX="467.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" textAlignment="CENTER" underline="true" wrappingWidth="150.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="467.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dimensions" textAlignment="CENTER" underline="true" wrappingWidth="150.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="429.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Width" textAlignment="CENTER" wrappingWidth="93.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="564.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height" textAlignment="CENTER" wrappingWidth="93.0">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="699.0" layoutY="222.0" mnemonicParsing="false" onAction="#submit" text="Submit">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="fxCaseID" alignment="CENTER" layoutX="165.0" layoutY="90.0" prefHeight="25.0" prefWidth="121.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="75.0" layoutY="28.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>

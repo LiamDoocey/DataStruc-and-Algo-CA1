@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="addItemCon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jewel.ca1.Controller">
+   <children>
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="633.0" mnemonicParsing="false" onAction="#loadAddPage" prefHeight="53.0" prefWidth="113.0" style="-fx-background-color: #37FF8B;" text="Add">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font></Button>
+      <Button layoutX="773.0" layoutY="633.0" mnemonicParsing="false" onAction="#loadStockPage" prefHeight="53.0" prefWidth="113.0" style="-fx-background-color: #51D6FF;" text="[View all stock]">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font></Button>
+      <Separator layoutX="14.0" layoutY="611.0" prefWidth="200.0" />
+      <Separator layoutX="214.0" layoutY="611.0" prefWidth="200.0" />
+      <Separator layoutX="414.0" layoutY="611.0" prefWidth="200.0" />
+      <Separator layoutX="614.0" layoutY="611.0" prefWidth="200.0" />
+      <Separator layoutX="691.0" layoutY="611.0" prefWidth="200.0" />
+      <Text layoutX="114.0" layoutY="677.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jewells For You" textAlignment="CENTER" wrappingWidth="672.5367126464844">
+         <font>
+            <Font name="Segoe UI Black" size="71.0" />
+         </font>
+      </Text>
+      <Button layoutX="13.0" layoutY="33.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #C04335;" text="Exit">
+         <font>
+            <Font name="Segoe UI Black" size="13.0" />
+         </font></Button>
+      <ListView fx:id="CaseList" layoutX="432.0" layoutY="77.0" prefHeight="499.0" prefWidth="417.0" />
+      <Text layoutX="423.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cases" textAlignment="CENTER" underline="true" wrappingWidth="435.13671875">
+         <font>
+            <Font name="Segoe UI Black" size="41.0" />
+         </font>
+      </Text>
+      <Button fx:id="addTrayBtn" layoutX="779.0" layoutY="577.0" mnemonicParsing="false" onAction="#loadAddTray" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: #37FF8B;" text="Add Tray">
+         <font>
+            <Font name="Segoe UI Black" size="11.0" />
+         </font></Button>
+      <Button layoutX="440.0" layoutY="541.0" mnemonicParsing="false" onAction="#flushSystem" style="-fx-background-color: #C04335;" text="Flush System">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="printTraysBtn" layoutX="778.0" layoutY="46.0" mnemonicParsing="false" onAction="#loadAddItem" text="View Trays" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="searchBar" layoutX="124.0" layoutY="88.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter a search term." />
+      <Button layoutX="297.0" layoutY="88.0" mnemonicParsing="false" onAction="#searchFor" style="-fx-background-color: blue; -fx-text-fill: white;" text="Search">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Button>
+      <ListView fx:id="searchResults" layoutX="70.0" layoutY="127.0" prefHeight="372.0" prefWidth="335.0" />
+      <Button layoutX="77.0" layoutY="468.0" mnemonicParsing="false" text="More Details" onAction="#moreSearchDetail"/>
+   </children>
+</Pane>
